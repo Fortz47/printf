@@ -6,6 +6,9 @@
 #include <unistd.h>
 
 /**
+ * struct func - struct func with type
+ * @ch: pointer to argument
+ * @f: pointer function associated with argument
  */
 
 typedef struct func
