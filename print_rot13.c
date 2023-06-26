@@ -1,6 +1,10 @@
 #include "main.h"
 
 /**
+ * print_r13 - prints a rot13'ed string
+ * @c: char
+ *
+ * Return: no of characters printed
  */
 
 int print_r13(char c)
@@ -13,6 +17,10 @@ int print_r13(char c)
 }
 
 /**
+ * print_rot13 - prints a rot13'ed string
+ * @args: argument list
+ *
+ * Return: no of characters printed
  */
 
 int print_rot13(va_list args)
