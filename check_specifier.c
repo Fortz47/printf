@@ -1,6 +1,10 @@
 #include "main.h"
 
 /**
+ * check_specifer - checks for format specifier
+ * @ch: character to check
+ * 
+ * Return: pointer to fuction
  */
 
 int (*check_specifier(const char *ch))(va_list)
