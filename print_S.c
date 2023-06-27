@@ -30,7 +30,7 @@ int  print_S(va_list args)
 		}
 		else
 			count += _putchar(*s);
-		*s++;
+		s++;
 	}
 	return (count);
 }
