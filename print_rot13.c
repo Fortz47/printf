@@ -36,7 +36,7 @@ int print_rot13(va_list args)
 	while (*str != '\0')
 	{
 		c = *str;
-		rotated = r13(c);
+		rotated = print_r13(c);
 		count += _putchar(rotated);
 		str++;
 	}
