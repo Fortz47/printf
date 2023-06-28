@@ -52,6 +52,6 @@ int print_str_rev(va_list args, flag *);
 int print_rot13(va_list args, flag *);
 
 flag *process_flags(const char *format, int index);
-bool is_flag_ch(char c);
+int is_flag_ch(char c);
 
 #endif
