@@ -12,7 +12,7 @@ int is_flag_ch(char c)
 	if (c == '+' || c == ' ' || c == '#')
 		return (1);
 	else
-		return (0):
+		return (0);
 }
 
 /**
