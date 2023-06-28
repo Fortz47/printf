@@ -7,9 +7,12 @@
  * Return: true or false
  */
 
-bool is_flag_ch(char c)
+int is_flag_ch(char c)
 {
-	return (c == '+' || c == ' ' || c == '#');
+	if (c == '+' || c == ' ' || c == '#')
+		return (1);
+	else
+		return(0):
 }
 
 /**
