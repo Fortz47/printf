@@ -10,16 +10,14 @@
 
 int print_str(va_list args, flag *f __attribute__((unused)))
 {
-	int count = 0;
+	int j;
 	char *str = va_arg(args, char *);
 
 	if (str == NULL)
-		str = "(nil)";
-	while (*str != '\0')
+		str = "(null)";
+	for (j = 0; str[j]; j++)
 	{
-		count += _putchar(*str);
-		str++;
+		_putchar(str[j]);
 	}
-
-	return (count);
+	return (j);
 }
