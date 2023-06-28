@@ -8,7 +8,8 @@
  * Return: number of characters printed
  */
 
-int print_cent(va_list args __attribute__((unused)), flag *f __attribute__((unused)))
+int print_cent(va_list args, flag *f __attribute__((unused)))
 {
-	return (_putchar('%'));
+	(void)args;
+	return (write(1,"%", 1));
 }
