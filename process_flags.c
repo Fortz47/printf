@@ -9,7 +9,7 @@
 
 bool is_flag_ch(char c)
 {
-	return(c == '+' || c == ' ' || c == '#');
+	return (c == '+' || c == ' ' || c == '#');
 }
 
 /**

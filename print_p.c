@@ -4,11 +4,12 @@
 /**
  * print_p - prints an address
  * @args: argument list
+ * @f: pointer to struct flag
  *
  * Return: number of argument printed
  */
 
-int print_p(va_list args)
+int print_p(va_list args, flag *f __attribute__((unused)))
 {
 	int digit, i;
 	char buffer[16];

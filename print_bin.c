@@ -24,11 +24,12 @@ int print_num_bin(unsigned int n, int count)
 /**
  * print_bin - print a number in binary
  * @args: integer arguments
+ * @f: pointer to struct flag
  *
  * Return: number of characters printed
  */
 
-int print_bin(va_list args)
+int print_bin(va_list args, flag *f __attribute__((unused)))
 {
 	int count;
 

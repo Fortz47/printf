@@ -19,11 +19,12 @@ int print_num_unDec(unsigned int n, int count)
 /**
  * print_unsigned_int - print unsigned int
  * @args: argument list
+ * @f: pointer to struct flag
  *
  * Return: number of characters printed
  */
 
-int print_unsigned_int(va_list args)
+int print_unsigned_int(va_list args, flag *f __attribute__((unused)))
 {
 	unsigned int n;
 	int count = 0;

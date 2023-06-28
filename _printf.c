@@ -10,8 +10,9 @@
 int _printf(const char *format, ...)
 {
 	int i, count;
-	int (*func)(va_list);
+	int (*func)(va_list, flag *);
 	va_list arg;
+	flag *flags_processed;
 
 
 	va_start(arg, format);
@@ -23,11 +24,12 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			func = check_specifier(&format[i + 1]);
+			flags_processed = process_flags(format, i + 1);
+			i = flags_processed->index;
+			func = check_specifier(&format[i]);
 			if (func != NULL)
 			{
-				count += func(arg);
-				i++;
+				count += func(arg, flags_processed);
 			}
 		}
 		else
