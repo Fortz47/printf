@@ -4,7 +4,6 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <unistd.h>
-#include <stdbool.h>
 
 /**
  * struct flags - struct type flag
