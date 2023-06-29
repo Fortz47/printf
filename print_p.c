@@ -16,9 +16,15 @@ int print_p(va_list args, flag * f __attribute__((unused)))
 
 	int count = 0;
 	void *ptr = va_arg(args, void *);
-
 	uintptr_t address = (uintptr_t)ptr;
 
+	if (ptr == NULL)
+	{
+		count += _putchar('0');
+		count += _putchar('x');
+		count += _putchar('0');
+		return (count);
+	}
 	count += _putchar('0');
 	count += _putchar('x');
 	i = 0;
