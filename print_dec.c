@@ -24,7 +24,7 @@ int print_num_dec(int n, int count)
  * Return: number of characters printed
  */
 
-int print_dec(va_list args, flag *f)
+int print_dec(va_list args, flag * f)
 {
 	int n;
 	int count = 0;
