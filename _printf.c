@@ -20,6 +20,10 @@ int _printf(const char *format, ...)
 	i = 0;
 	count = 0;
 
+	if (format == NULL)
+		return (-1);
+	if (_strlen(format) == 0)
+		return (0);
 	while (format[i])
 	{
 		if (format[i] == '%')
