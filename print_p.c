@@ -20,12 +20,12 @@ int print_p(va_list args, flag * f __attribute__((unused)))
 	uintptr_t address = (uintptr_t)ptr;
 
 	count += _putchar('0');
-	count += _putchar('0');
+	count += _putchar('x');
 	i = 0;
 	while (address > 0)
 	{
 		digit = address % 16;
-		buffer[i++] = digit < 10 ? digit + '0' : digit - 10 + 'A';
+		buffer[i++] = digit < 10 ? digit + '0' : digit - 10 + 'a';
 		address /= 16;
 	}
 	while (i > 0)
