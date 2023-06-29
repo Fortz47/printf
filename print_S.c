@@ -8,7 +8,7 @@
  * Return: number of characters printed
  */
 
-int  print_S(va_list args, flag *f __attribute__((unused)))
+int  print_S(va_list args, flag * f __attribute__((unused)))
 {
 	char *s;
 	int count;
