@@ -8,7 +8,7 @@
  * Return: number of argument printed
  */
 
-int print_str_rev(va_list args, flag *f __attribute__((unused)))
+int print_str_rev(va_list args, flag * f __attribute__((unused)))
 {
 	int count = 0;
 	int i = 0;
