@@ -53,5 +53,7 @@ int print_rot13(va_list args, flag *);
 
 flag *process_flags(const char *format, int index);
 int is_flag_ch(char c);
+/* code inside print_cent.c */
+int _strlen(const char *);
 
 #endif
