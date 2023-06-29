@@ -21,11 +21,13 @@ int print_p(va_list args, flag * f __attribute__((unused)))
 
 	if (ptr == NULL)
 	{
-		while (*NULL_Buffer)
+		while (count < 8)
+			count += _putchar('0');
+		/*while (*NULL_Buffer)
 		{
 			count += _putchar(*NULL_Buffer);
 			NULL_Buffer++;
-		}
+		}*/
 		return (count);
 	}
 	count += _putchar('0');
