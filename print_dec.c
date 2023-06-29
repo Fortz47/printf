@@ -33,7 +33,7 @@ int print_dec(va_list args, flag * f)
 
 	if (f->flag1 && n >= 0)
 		count += _putchar('+');
-	if (!f->flag1 && f->flag2)
+	if (!f->flag1 && f->flag2 && n > 0)
 		count += _putchar(' ');
 
 	if (n == 0)
