@@ -28,14 +28,15 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			if (format[i + 1] == '\0')
-				break;
-			flags_processed = process_flags(format, i + 1);
-			i = flags_processed->index;
-			func = check_specifier(&format[i]);
-			if (func != NULL)
+			if (format[i + 1])
 			{
-				count += func(arg, flags_processed);
+				flags_processed = process_flags(format, i + 1);
+				i = flags_processed->index;
+				func = check_specifier(&format[i]);
+				if (func != NULL)
+				{
+					count += func(arg, flags_processed);
+				}
 			}
 		}
 		else
