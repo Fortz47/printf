@@ -19,11 +19,12 @@ int print_r13(char c)
 /**
  * print_rot13 - prints a rot13'ed string
  * @args: argument list
+ * @f: pointer to struct flag
  *
  * Return: no of characters printed
  */
 
-int print_rot13(va_list args)
+int print_rot13(va_list args, flag *f __attribute__((unused)))
 {
 	char c, rotated;
 
@@ -36,7 +37,7 @@ int print_rot13(va_list args)
 	while (*str != '\0')
 	{
 		c = *str;
-		rotated = r13(c);
+		rotated = print_r13(c);
 		count += _putchar(rotated);
 		str++;
 	}

@@ -3,11 +3,12 @@
 /**
  * print_S - print the string
  * @args: string argument
+ * @f: pointer to struct flag
  *
  * Return: number of characters printed
  */
 
-int  print_S(va_list args)
+int  print_S(va_list args, flag *f __attribute__((unused)))
 {
 	char *s;
 	int count;
@@ -30,7 +31,7 @@ int  print_S(va_list args)
 		}
 		else
 			count += _putchar(*s);
-		*s++;
+		s++;
 	}
 	return (count);
 }
