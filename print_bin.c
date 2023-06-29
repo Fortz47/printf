@@ -29,7 +29,7 @@ int print_num_bin(unsigned int n, int count)
  * Return: number of characters printed
  */
 
-int print_bin(va_list args, flag *f __attribute__((unused)))
+int print_bin(va_list args, flag * f __attribute__((unused)))
 {
 	int count;
 
