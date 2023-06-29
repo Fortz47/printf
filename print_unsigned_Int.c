@@ -24,7 +24,7 @@ int print_num_unDec(unsigned int n, int count)
  * Return: number of characters printed
  */
 
-int print_unsigned_int(va_list args, flag *f __attribute__((unused)))
+int print_unsigned_int(va_list args, flag * f __attribute__((unused)))
 {
 	unsigned int n;
 	int count = 0;
