@@ -17,17 +17,11 @@ int print_p(va_list args, flag * f __attribute__((unused)))
 	int count = 0;
 	void *ptr = va_arg(args, void *);
 	uintptr_t address = (uintptr_t)ptr;
-	char *NULL_Buffer = "(nil)(nil)";
 
 	if (ptr == NULL)
 	{
 		while (count < 8)
 			count += _putchar('0');
-		/*while (*NULL_Buffer)
-		{
-			count += _putchar(*NULL_Buffer);
-			NULL_Buffer++;
-		}*/
 		return (count);
 	}
 	count += _putchar('0');
