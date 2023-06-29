@@ -20,8 +20,8 @@ int print_p(va_list args, flag * f __attribute__((unused)))
 
 	if (ptr == NULL)
 	{
-		while (count < 8)
-			count += _putchar('0');
+		count += _putchar('0');
+		count += _putchar('0');
 		return (count);
 	}
 	count += _putchar('0');
